@@ -48,7 +48,7 @@ def run(args):
 
     name = args[0]
     language = args[1]
-    tags = args[2].split(",") if args[2] else []
+    tags = args[2]
 
     snippets = load_snippets()
 
@@ -62,7 +62,7 @@ def run(args):
         "id": len(snippets) + 1,
         "name": name,
         "language": language,
-        "tags": tags,
+        "tag": tags,
         "code": code,
         "description": ""
     }

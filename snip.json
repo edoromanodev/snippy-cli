@@ -1,12 +1,10 @@
 [
     {
-        "id": 2,
-        "name": "negro",
+        "id": 1,
+        "name": "elemento_nuovo",
         "language": "c",
-        "tags": [
-            "crack"
-        ],
-        "code": "negroooooo",
+        "tag": "script",
+        "code": "print(\"hello world\")",
         "description": ""
     }
 ]

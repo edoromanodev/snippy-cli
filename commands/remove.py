@@ -15,7 +15,7 @@ def save_snippets(snippets):
 
 
 def run(args):
-    """
+    """ 
     Rimuove uno snippet:
       remove <name>
     """
