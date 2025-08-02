@@ -29,7 +29,7 @@ def read_multiline_input(prompt="Enter the code (end with a blank line):"):
             line = input()
         except EOFError:
             break  
-        if line.strip() == "":
+        if line.strip() == "finish":
             break
         lines.append(line)
     return "\n".join(lines)
@@ -55,8 +55,11 @@ def run(args):
     if any(s['name'] == name for s in snippets):
         print(f"Error: A snippet with the name already exists'{name}'.")
         return
+   
 
     code = read_multiline_input()
+    desc = input("Insert a description for:"+args[0]+":\n")
+   
 
     new_snippet = {
         "id": len(snippets) + 1,
@@ -64,7 +67,7 @@ def run(args):
         "language": language,
         "tag": tags,
         "code": code,
-        "description": ""
+        "description": desc
     }
 
     snippets.append(new_snippet)

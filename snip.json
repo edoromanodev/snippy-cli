@@ -1,10 +1,1 @@
-[
-    {
-        "id": 1,
-        "name": "elemento_nuovo",
-        "language": "c",
-        "tag": "script",
-        "code": "print(\"hello world\")",
-        "description": ""
-    }
-]
+[]

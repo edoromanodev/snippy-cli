@@ -22,7 +22,7 @@ def handle_command(command: str) -> None:
     except ValueError as e:
         print(f"Parsing Error: {e}")
     except Exception as e:
-        print(f"General Error: {e}")
+        print(f"General Error: {e} \n use: <help> to get the commands list")
 
 
 def main() -> None:
@@ -30,7 +30,7 @@ def main() -> None:
         user_input = input("webshell >>> ").strip()
 
         if not user_input:
-            # Ignora input vuoto senza chiamare il parser
+            # Ignore empty input without calling the parser
             continue
 
         if check_interruption(user_input):
@@ -38,7 +38,6 @@ def main() -> None:
             break
 
         handle_command(user_input)
-
 
 if __name__ == "__main__":
     main()

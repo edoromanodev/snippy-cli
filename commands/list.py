@@ -27,7 +27,7 @@ def run(args):
 
     for s in snippets:
 
-        print("-", s['name'])
+        print("- [ID -",s['id'],"]", "name:", s['name'], "/// language:", s['language'],  "/// tag:", s['tag'])
         
 
     

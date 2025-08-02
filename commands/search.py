@@ -29,7 +29,8 @@ def run(args):
 
         if s['tag'] == args[0]:
 
-            print("-", s['tag'])
+            print("- [ID -",s['id'],"]", "name:", s['name'], "/// language:", s['language'],  "/// tag:", s['tag'])
+        
         
 
     
